@@ -1,38 +1,38 @@
 <?php
 /**
- * An example plugin for a membership course walking readers through how to work with GitHub.
+ * Plugin de ejemplo.
  *
- * @link              https://github.com/tommcfarlin/wp-hello-world/
+ * @link              https://github.com/stevepinero/wp-hola-mundo
  * @since             1.0.0
  * @package           WPHW
  *
  * @wordpress-plugin
- * Plugin Name:       WordPress Hello World
- * Plugin URI:        https://github.com/tommcfarlin/wp-hello-world/
- * Description:       An example plugin for a membership course walking readers through how to work with GitHub.
+ * Plugin Name:       WordPress Hola Mundo
+ * Plugin URI:        https://github.com/stevepinero/wp-hola-mundo
+ * Description:       Plugin de ejemplo.
  * Version:           1.0.0
- * Author:            Tom McFarlin
- * Author URI:        https://tommcfarlin.com/
+ * Author:            Steve Piñero
+ * Author URI:        https://stevepinero.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-// If this file is called directly, abort.
+// Muestra error si este archivo es ejecutado fuera de wordpress.
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
 add_filter( 'login_message', 'wphw_login_message' );
 /**
- * Adds 'Hello World' above the login form in the WordPress login form.
+ * Agrega 'Hola Mundo' en el formulario de login.
  *
- * @param    string $message    The default message to display above the form.
- * @return   string $message    The message to display above the form.
+ * @param    string $message    El mensaje por defecto.
+ * @return   string $message    Mensaje a mostrar.
  */
 function wphw_login_message( $message ) {
 
 	$message = '<h2>';
-		$message .= 'Hello World!';
+		$message .= 'Hola Mundo!';
 	$message .= '</h2>';
 
 	return $message ;

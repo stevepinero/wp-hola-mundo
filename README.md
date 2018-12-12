@@ -4,7 +4,7 @@ Plugin de prueba para wordpress
 
 ## Descripcion
 
-Agrega el mensaje *Hola Mundo* Debajo del logo de Wordpress y arriba del login cuando el usuario accesa 
+Agrega el mensaje *Hola Mundo* Arriba del logo de Wordpress y arriba del login cuando el usuario accesa 
 la pagina `/wp-login.php`.
 
 ## FAQ
